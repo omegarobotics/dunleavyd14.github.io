@@ -54,6 +54,9 @@ window.onload = function () {
 				nodelist[i].innerHTML = '';
 			}
 			deck = new rolls();
+			let a = deck.deck.pop();
+			document.getElementById(a).innerHTML += block;
+			document.getElementById("recent").innerHTML += a + ", ";  
 			document.getElementById("tilnew").innerHTML = deck.length();
 		}
 		
